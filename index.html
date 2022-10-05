@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/7e8d5a0269.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sprint 01: Encriptador de texto</title>
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <div class="logo">
+          <h1><img src="imagenes/alura-white.png" /></h1>
+        </div>
+        <div class="titulo">
+          <h2>Sprint 01: Encriptador de texto</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="alert hide-element" id="alerta">
+        <span class="closebtn" id="closebtn">&times;</span>
+        <label id="label-alert">This is an alert box.</label>
+      </div>
+      <div class="contenido">
+      <div class="div-texto">
+        <div class="div-textarea"><textarea id="texto-a-traducir" name="texto-a-traducir" placeholder="Ingrese el texto aqui"></textarea></div>
+        <div class="div-mensaje"><label><i class="fa-solid fa-circle-exclamation"></i></label>&nbsp;<label class="">Solo letras minusculas y sin acentos</label></div>
+        <div class="div-botones"><button class="boton-encriptar" id="boton-encriptar">Encriptar</button><button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button></div>
+      </div>
+      <div class="mensaje">
+        <img class="imagen-empty" id="imagen-empty" src="imagenes/muneco.png"/>
+        <label class="no-encontrado" id="mensaje-codificado">Ningun mensaje fue encontrado</label>
+        <label class="ingresa-texto" id="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</label>
+        <button class="copiar-texto" id="copiar-texto">Copiar texto</button>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+      <p class="copyright">Desarrollado por Nestor Barrios</p>
+    </footer>
+    
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copiarTexto.js"></script>
+  </body>
+</html>

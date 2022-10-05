@@ -1,0 +1,326 @@
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: LightSkyBlue;
+}
+header {
+    background-color: DodgerBlue;
+    padding: 1em 0;
+}
+.caja{
+    width: 45em;
+    position: relative;
+    margin: 0 auto;
+}
+.logo{
+    display: inline-block;
+    font-size: 1.5em;
+}
+.titulo{
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.3em;
+    left: 1em;
+}
+.contenido{
+    width: 45em;
+    height: 25em;
+    margin: 0 auto;
+    padding: 1.5em;
+    /*border: 1px solid black;*/
+}
+.div-texto{
+    display: inline-block;
+    width: 73%;
+    height: 100%;
+    margin-right: 0.5em;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+.div-botones{
+    padding-left: 1em;
+}
+.imagen-empty{
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+.no-encontrado{
+    display: block;
+    color: DarkBlue;
+    position: relative;
+    top: 20%;
+    font-weight: bold;
+}
+.ingresa-texto{
+    color: DarkBlue;
+    position: relative;
+    top: 21%;
+    font-size: 0.7em;
+}
+.mensaje{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    padding: 0.5em 0.5em;
+    box-sizing: border-box;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+.div-textarea{
+    height: 78%;
+    margin-bottom: 3%;
+}
+.div-mensaje{
+    color: DarkBlue;
+    font-size: 0.8em;
+}
+textarea {
+    background-color: LightSkyBlue;
+    color: DarkBlue;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    resize: none;
+    border: none;
+}
+button{
+    width: 40%;
+    background-color: rgb(26, 107, 187);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.6em 0em;
+    margin: 1em;
+    cursor: pointer;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+button:hover{
+    background-color: rgb(16, 83, 150);
+}
+.boton-desencriptar{
+    background-color: DodgerBlue;
+}
+.boton-desencriptar:hover{
+    background-color: rgb(19, 122, 224);
+}
+.copiar-texto{
+    position: relative;
+    font-size: 1em;
+    width: 80%;
+    top: 80%;
+    display: none;
+}
+footer{
+    text-align: center;
+    background-color: DodgerBlue;
+    padding: 1em;
+}
+.copyright{
+    color:#FFFFFF;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin: 1em;
+}
+.hide-element{
+    display: none;
+}
+.show-element{
+    display: inline-block;
+}
+
+/* The alert message box */
+.alert {
+    padding: 1em;
+    background-color: #FFC300; 
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1em;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border: 0.1em solid white;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 1em;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 1.2em;
+    line-height: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+
+  
+/*Para pantallas con mas de 1500px*/
+@media only screen and (max-resolution: 163dpi) and (min-width: 1500px){
+    body{
+        font-size: 20px;
+    }
+}
+/*Para que el footer quede abajo en las pantallas grandes*/
+@media only screen and (max-resolution: 163dpi) and (min-height: 720px){
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 97.5%;
+    }
+}
+/*Para  telefons mas de 300px*/
+@media only screen and (orientation: portrait) and (min-resolution: 163dpi) and (min-width: 300px){
+    body{
+        font-size: 16px;
+    }
+    .titulo{
+        font-size: 1.2em;
+    }
+    .logo{
+        font-size: 1em;
+        width: 0.2em;
+    }
+    .logo img{
+        width: 1em;
+    }
+    .caja{
+        width: 19.5em;
+    }
+    .contenido{
+        width: 19.5em;
+    }
+    .div-texto{
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1.5em;
+    }
+    .mensaje{
+        width: 100%;
+        height: 8em;
+        padding: 1em;
+    }
+    button{
+        padding: 0.6em 0em;
+        margin: 0.5em 0.5em;
+    }
+    .div-botones{
+        padding-left: 0.5em;
+    }
+    .imagen-empty{
+        display: none;
+    }
+    .no-encontrado{
+        top: 5%;
+    }
+    .ingresa-texto{
+        top: 6%;
+    }
+    .copiar-texto{
+        top: 40%;
+    }
+    .alert {
+        top: 40%;
+        left: 9%;
+      }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 91%;
+    }
+}
+/*Para  Tablets*/
+@media only screen and (orientation: landscape) and (min-resolution: 163dpi) and (min-height: 720px){
+    body{
+        font-size: 20px;
+    }
+    .titulo{
+        font-size: 1.4em;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 97.5%;
+    }
+}
+/*Para  Tablets giradas*/
+@media only screen and (orientation: portrait) and (min-resolution: 163dpi) and (min-width: 720px){
+    body{
+        font-size: 22px;
+    }
+    .titulo{
+        font-size: 1.4em;
+    }
+    .caja{
+        width: 26em;
+    }
+    .contenido{
+        width: 27.5em;
+    }
+    .div-texto{
+        width: 100%;
+        height: 22em;
+        margin-bottom: 1.5em;
+    }
+    .mensaje{
+        width: 100%;
+        height: 40%;
+        padding: 1em;
+    }
+    .imagen-empty{
+        display: none;
+    }
+    .copiar-texto{
+        top: 50%;
+    }
+    .alert {
+        top: 40%;
+        left: 25%;
+      }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 93%;
+    }
+}
+/*Para  Tablets giradas mas de 800px*/
+@media only screen and (orientation: portrait) and (min-resolution: 163dpi) and (min-width: 800px){
+    body{
+        font-size: 24px;
+    }
+    .no-encontrado{
+        top: 5%;
+    }
+    .ingresa-texto{
+        top: 6%;
+    }
+    .copiar-texto{
+        top: 50%;
+    }
+    .alert {
+        top: 38%;
+        left: 22%;
+      }
+}
+/*Para  Tablets giradas mas de 900px*/
+@media only screen and (orientation: portrait) and (min-resolution: 163dpi) and (min-width: 800px){
+    body{
+        font-size: 26px;
+    }
+}
